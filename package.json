@@ -1,11 +1,16 @@
 {
   "name": "zaker",
-  "displayName": "zaker",
+  "displayName": "Zaker",
   "description": "Zaker is an Islamic extension that gives you   the ability to read verses of The Holy Quran  in demand",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.70.0"
   },
+  "author": {
+    "name": "Houssam Yahiaoui",
+    "email": "houssem.yahiaoui.ai@gmail.com"
+  },
+  "icon": "https://github.com/houssem-yahiaoui/zaker/blob/main/media/zk.svg",
   "publisher": "HoussamYahiaoui",
   "categories": [
     "Other"
@@ -13,6 +18,9 @@
   "activationEvents": [
     "onStartupFinished"
   ],
+  "repository": {
+    "url": "https://github.com/houssem-yahiaoui/zaker"
+  },
   "main": "./extension.js",
   "contributes": {
     "commands": [
