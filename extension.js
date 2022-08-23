@@ -10,7 +10,7 @@ function getQuranMessageFormat(ayaMetadata) {
 	if(ayaMetadata.language === 'ar') {
 		return `
 			${ayaMetadata.basmalah.text}\n\n
-			${ayaMetadata.foundInitialVerse.text} <${ayaMetadata.foundInitialVerse.id}
+			${ayaMetadata.foundInitialVerse.text} <${ayaMetadata.foundInitialVerse.id}>
 			${ayaMetadata.foundSecondVerse.text}<${ayaMetadata.foundSecondVerse.id}>\n
 			${ayaMetadata.name}`;
 	} else {
