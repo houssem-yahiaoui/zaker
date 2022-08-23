@@ -1,0 +1,105 @@
+{
+  "name": "zaker",
+  "displayName": "zaker",
+  "description": "Zaker is an Islamic extension that gives you   the ability to read verses of The Holy Quran  in demand",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "publisher": "HoussamYahiaoui",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "zaker.showAya",
+        "title": "Zaker: Show Aya"
+      },
+      {
+        "command": "zaker.showHadith",
+        "title": "Zaker: Show Hadith"
+      },
+      {
+        "command": "zaker.showDoua",
+        "title": "Zaker: Show Doua"
+      }
+    ],
+    "configuration": {
+      "title": "Zaker",
+      "properties": {
+        "general.zakerNotificationTheme": {
+          "type": "string",
+          "description": "Define here the notificaion theme (Quran, Hadith, Doua .. etc)",
+          "default": "Quran",
+          "enum": [
+            "Quran"
+          ]
+        },
+        "general.zakerNotificationFrequency": {
+          "type": "string",
+          "description": "Define here the notificaion threshhold",
+          "default": "Each 5 min",
+          "enum": [
+            "Each 5 min",
+            "Each 10 min",
+            "Each 30 min",
+            "Each 1 hour",
+            "Each 3 hour",
+            "Each 6 hour"
+          ],
+          "enumDescriptions": [
+            "Notify me each 5 minutes",
+            "Notify me each 10 minutes",
+            "Notify me each 30 minutes",
+            "Notify me each 1 hour",
+            "Notify me each 3 hours",
+            "Notify me each 6 hours"
+          ]
+        },
+        "quran.zakerQuranLanguage": {
+          "type": "string",
+          "description": "Define here the Quran Notification Languages",
+          "default": "Arabic",
+          "enum": [
+            "Arabic",
+            "Bengali",
+            "Chinese",
+            "English",
+            "Spanish",
+            "French",
+            "Indonesian",
+            "Russian",
+            "Swedish",
+            "Turkish",
+            "Urdu"
+          ]
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.70.0",
+    "@vscode/test-electron": "^2.1.5",
+    "eslint": "^8.20.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "node-cron": "^3.0.2"
+  }
+}
