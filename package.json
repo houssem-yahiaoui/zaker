@@ -1,8 +1,8 @@
 {
   "name": "zaker",
-  "displayName": "Zaker",
-  "description": "Zaker is an Islamic extension that gives you   the ability to read verses of The Holy Quran  in demand",
-  "version": "1.0.0",
+  "displayName": "Zaker - Quran Verses Extension",
+  "description": "Zaker is an Islamic extension that gives you the ability to read verses of The Holy Quran  in demand",
+  "version": "1.1.1",
   "engines": {
     "vscode": "^1.70.0"
   },
